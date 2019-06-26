@@ -1,0 +1,136 @@
+body {
+  background-color: lavender;
+}
+
+#section1 {
+  height: 400px;
+  width: 100%;
+}
+
+#cupcake {
+  height: 370px;
+  width: 370px;
+  margin-left: 35%;
+  padding-top: 2%;
+}
+
+nav {
+  background-color: violet;
+  text-align: left;
+  padding-top: none;
+  font-family: 'Acme', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  width: 100%;
+  height: 70px;
+}
+
+nav li {
+  overflow: hidden;
+  list-style-type: none;
+  display: inline-block;
+  padding:  0px 15px 15px;
+  color: saddleBrown;
+}
+
+
+a:hover {
+  background-size: 100% 4px;
+}
+
+a:active {
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  background-image: linear-gradient(deeppink, saddleBrown);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 3px;
+  transition: background-size .5s;
+  color: floralwhite;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+}
+
+#socials {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.container {
+  display: inline-flex;
+}
+
+#social-logo {
+  padding-left: 400px;
+  padding-top: 15px;
+  margin-right: 0;
+}
+
+#bakery-name {
+  font-size: 95px;
+  padding-left: 25%;
+  font-family: 'Rochester', cursive;
+  color: deeppink;
+  margin-top: -5.3%;
+}
+
+#events {
+  width:200px;
+  height:200px;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.events-container {
+  display: grid;
+  grid-template-rows: 300px 300px 300px 300px 300px 300px;
+  grid-row-gap: 20px;
+}
+
+.event-stuff {
+  display: inline-grid;
+  grid-template-columns: 800px 400px;
+  grid-column-gap: 20px;
+  margin-left: .2%;
+  border: 2px solid deeppink;
+  border-radius: 5px;
+}
+
+#event-information {
+  margin-left: 2%;
+}
+
+#event-image {
+  margin-left: 11%;
+  margin-top: 7%;
+}
+
+#title {
+  text-align: center;
+  font-family: 'Rochester', cursive;
+  font-size: 25px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Rochester', cursive;
+  color: deeppink;
+}
+
+p {
+  font-size: 16.5px;
+  text-align: justify;
+  font-family: 'Arapey', serif;
+}
+
+#event-time {
+  text-align: center;
+}
