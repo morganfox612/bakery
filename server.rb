@@ -73,3 +73,8 @@ end
 get '/subscribe' do
   erb :subscribe
 end
+
+
+
+
+#Newsletter.subscribe(recipient).deliver_now
