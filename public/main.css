@@ -7,6 +7,11 @@ body {
   width: 100%;
 }
 
+#section2 {
+  width: 100%;
+  height: 70px;
+}
+
 #cupcake {
   height: 370px;
   width: 370px;
@@ -68,7 +73,7 @@ a {
 }
 
 #social-logo {
-  padding-left: 400px;
+  padding-left: 265px;
   padding-top: 15px;
   margin-right: 0;
 }
@@ -133,4 +138,53 @@ p {
 
 #event-time {
   text-align: center;
+}
+
+#cookie-img, #cake-img, #muffin-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+  border: 3px solid deeppink;
+  margin-left: 24%;
+}
+
+#cookie-type, #muffin-type, #cake-type {
+  text-align: center;
+  font-family: 'Rochester', cursive;
+}
+
+#cookie-descrip, #cake-descrip, #muffin-descrip {
+  text-align: center;
+  font-family: 'Arapey', serif;
+}
+
+.cakes-container, .cookies-container, .muffins-container {
+  display: grid;
+  grid-template: 400px 400px / 400px 400px 400px;
+  margin-left: 2.5%;
+  margin-top: 3%;
+}
+
+footer {
+  background-color: mediumOrchid;
+  height: 25px;
+}
+
+footer li {
+  list-style: none;
+  text-align: right;
+  padding-right: .5%;
+  padding-top: .4%
+}
+
+#subscribe-section {
+  width: 100%;
+  height: 466px;
+}
+
+#thanks {
+  width: 300px;
+  height: 190px;
+  border-radius: 5%;
+  border: 2px solid deeppink;
 }
