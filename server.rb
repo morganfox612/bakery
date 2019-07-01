@@ -1,8 +1,13 @@
 require "sinatra"
 require "httparty"
+require "./mailer.rb"
 
 app_key = 'M2X4WR735AODNYMJ6C4W'
 $req = HTTParty.get("https://www.eventbriteapi.com/v3/events/search/?q=baking&token=#{app_key}")
+
+def subscribe_email(recipient)
+  Newsletter.subscribe(recipient).deliver_now
+end
 
 class Cookies
   attr_accessor :cookie_name, :cookie_price, :cookie_description
@@ -71,8 +76,10 @@ get '/events' do
 end
 
 get '/subscribe' do
+  subscribe_email(params[:email_address]) if params[:email_address]
   erb :subscribe
 end
+
 
 
 
